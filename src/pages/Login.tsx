@@ -5,8 +5,13 @@ import GreenButton from '../components/GreenButton';
 function Login() {
   return (
       <div className="login-container">
-        <h1>Login</h1>
+        <div className="login-text-container">
+          <h1>1º programa de lealdade do Brasil</h1>
+          <p>Baseado na empatia, gratidão e sustentabilidade</p>
+        </div>
+       
         <form className="login-form-container">
+          <h2>Mimoo</h2>
           <Input />
           <Input />
           <GreenButton />
