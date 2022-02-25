@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Input from '../components/input';
 import GreenButton from '../components/GreenButton';
 
+interface stateInfoUser {
+  email: string;
+  password: string
+}
+
+interface evInputs2 {
+  value: string;
+  name: string;
+}
+
+interface evInputs {
+  target: evInputs2;
+}
+
 const Login = () => {
+  const [ infoUserLogin, setInfoUserLogin ] = useState<stateInfoUser>({ email:'', password:'' })
+
+  const handleChangeInputLogin = ({ target }: evInputs) => {
+    const { value,name } = target;
+    setInfoUserLogin({
+      ...infoUserLogin,
+      [name]:value
+    })
+  }
+
   return (
     <div className="login-container">
       <div className="login-text-container">
@@ -16,11 +40,13 @@ const Login = () => {
           inputplaceholder="Email"
           name="email"
           type="text"
+          handleChange={ handleChangeInputLogin }
         />
         <Input
           inputplaceholder="Senha"
           name="password"
           type="password"
+          handleChange={ handleChangeInputLogin }
         />
         <GreenButton />
       </form>
