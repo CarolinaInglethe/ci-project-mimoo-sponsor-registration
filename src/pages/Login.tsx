@@ -12,8 +12,16 @@ function Login() {
        
         <form className="login-form-container">
           <h2>Mimoo</h2>
-          <Input />
-          <Input />
+          <Input 
+            inputplaceholder="Email"
+            name="email"
+            type="text"
+          />
+          <Input
+            inputplaceholder="Senha"
+            name="password"
+            type="password"
+          />
           <GreenButton />
         </form>
       </div>
