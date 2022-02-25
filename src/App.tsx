@@ -6,7 +6,7 @@ import Login from './pages/Login'
 function App() {
   return (
     <div className="App">
-     <p> Pagina inicial</p>
+     <header>header</header>
      <BrowserRouter basename={ process.env.PUBLIC_URL }>
        <Routes>
          <Route path="/login" element={ <Login/> }/>
