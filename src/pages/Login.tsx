@@ -35,7 +35,7 @@ const Login = () => {
       </div>
 
       <form className="login-form-container">
-        <h2>Mimoo</h2>
+        <h2 style={ { color:'rgba(70, 196, 158, 0.959)' } }>Mimoo</h2>
         <Input
           inputplaceholder="Email"
           name="email"
