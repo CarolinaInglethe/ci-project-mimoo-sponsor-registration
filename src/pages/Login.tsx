@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Input from '../components/input';
 import GreenButton from '../components/GreenButton';
+import { Link } from 'react-router-dom'
 
 interface stateInfoUser { email: string; password: string}
 
@@ -11,7 +12,7 @@ interface evInputs { target: evInputs2; }
 const Login = () => {
   const [ infoUserLogin, setInfoUserLogin ] = useState<stateInfoUser>({ email:'', password:'' })
   const [ nameButtonLogin, setNameButtonLogin ] = useState('Entrar')
-  const [ messageLogin, setMessageLogin ] = useState('');
+  const [ messageLogin, setMessageLogin ] = useState('null');
 
   const handleChangeInputLogin = ({ target }: evInputs) => {
     const { value,name } = target;
@@ -21,7 +22,12 @@ const Login = () => {
     })
   }
   
-  useEffect(() => {
+  // useEffect(() => {
+    
+  //   return setMessageLogin('null')
+  // }, [infoUserLogin])
+
+  const handleClickButtonLogin = () => {
     if (infoUserLogin.email.length < 8 
     || infoUserLogin.password.length < 8) {
       return setMessageLogin('Senha ou Email com menos de 8 caracteres')
@@ -31,13 +37,8 @@ const Login = () => {
     if (emailRegex.test(infoUserLogin.email) !== true) {
       return setMessageLogin('Formato de email inválido');
     }
-    setMessageLogin('')
-  }, [infoUserLogin])
-
-  const handleClickButtonLogin = () => {
+    setMessageLogin('null')
     setNameButtonLogin('Carregando..');
-
-    
   }
 
   return (
@@ -62,8 +63,9 @@ const Login = () => {
           handleChange={ handleChangeInputLogin }
         />
 
-        <span style={ { color:"red" } }>
-          { messageLogin.length > 1 ? <p>{ messageLogin }</p> : ""}
+        <Link style={ { color: 'rgba(70, 196, 158, 0.959)'  } } to="/dashboard">Esqueceu a senha?</Link>
+        <span style={ { color: 'red'} }>
+          { messageLogin === 'null' ? "" : <p>{ messageLogin }</p>}
         </span>
 
         <GreenButton 
