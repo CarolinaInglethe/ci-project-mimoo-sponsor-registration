@@ -1,9 +1,20 @@
 import React from 'react';
 
-function GreenButton() {
+interface Event { target: object }
+
+interface Props { 
+  nameButton: string,
+  handleClick:(e: Event) => void
+}
+
+const GreenButton: React.FC<Props> = ({ nameButton, handleClick  }) => {
   return (
-    <button type="button" className="green-button">
-        greenButton
+    <button 
+      type="button" 
+      className="green-button"
+      onClick={ handleClick }
+    >
+      { nameButton }
     </button>
   )
 };

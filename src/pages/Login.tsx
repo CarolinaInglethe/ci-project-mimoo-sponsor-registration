@@ -2,22 +2,15 @@ import React, { useState } from 'react';
 import Input from '../components/input';
 import GreenButton from '../components/GreenButton';
 
-interface stateInfoUser {
-  email: string;
-  password: string
-}
+interface stateInfoUser { email: string; password: string}
 
-interface evInputs2 {
-  value: string;
-  name: string;
-}
+interface evInputs2 { value: string; name: string; }
 
-interface evInputs {
-  target: evInputs2;
-}
+interface evInputs { target: evInputs2; }
 
 const Login = () => {
   const [ infoUserLogin, setInfoUserLogin ] = useState<stateInfoUser>({ email:'', password:'' })
+  const [ nameButtonLogin, setNameButtonLogin ] = useState('Entrar')
 
   const handleChangeInputLogin = ({ target }: evInputs) => {
     const { value,name } = target;
@@ -25,6 +18,10 @@ const Login = () => {
       ...infoUserLogin,
       [name]:value
     })
+  }
+
+  const handleClickButtonLogin = () => {
+    setNameButtonLogin('Carregando..')
   }
 
   return (
@@ -48,7 +45,10 @@ const Login = () => {
           type="password"
           handleChange={ handleChangeInputLogin }
         />
-        <GreenButton />
+        <GreenButton 
+          nameButton={ nameButtonLogin }
+          handleClick={ handleClickButtonLogin }
+        />
       </form>
     </div>
   );
