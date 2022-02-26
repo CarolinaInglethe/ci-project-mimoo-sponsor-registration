@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Input from '../components/input';
 import GreenButton from '../components/GreenButton';
 
@@ -11,17 +11,33 @@ interface evInputs { target: evInputs2; }
 const Login = () => {
   const [ infoUserLogin, setInfoUserLogin ] = useState<stateInfoUser>({ email:'', password:'' })
   const [ nameButtonLogin, setNameButtonLogin ] = useState('Entrar')
+  const [ messageLogin, setMessageLogin ] = useState('');
 
   const handleChangeInputLogin = ({ target }: evInputs) => {
     const { value,name } = target;
     setInfoUserLogin({
       ...infoUserLogin,
-      [name]:value
+      [name]:value,
     })
   }
+  
+  useEffect(() => {
+    if (infoUserLogin.email.length < 8 
+    || infoUserLogin.password.length < 8) {
+      return setMessageLogin('Senha ou Email com menos de 8 caracteres')
+    }
+
+    const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]/i;
+    if (emailRegex.test(infoUserLogin.email) !== true) {
+      return setMessageLogin('Formato de email inválido');
+    }
+    setMessageLogin('')
+  }, [infoUserLogin])
 
   const handleClickButtonLogin = () => {
-    setNameButtonLogin('Carregando..')
+    setNameButtonLogin('Carregando..');
+
+    
   }
 
   return (
@@ -45,6 +61,11 @@ const Login = () => {
           type="password"
           handleChange={ handleChangeInputLogin }
         />
+
+        <span style={ { color:"red" } }>
+          { messageLogin.length > 1 ? <p>{ messageLogin }</p> : ""}
+        </span>
+
         <GreenButton 
           nameButton={ nameButtonLogin }
           handleClick={ handleClickButtonLogin }
