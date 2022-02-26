@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Input from '../components/input';
 import GreenButton from '../components/GreenButton';
 import { Link } from 'react-router-dom'
@@ -21,11 +21,6 @@ const Login = () => {
       [name]:value,
     })
   }
-  
-  // useEffect(() => {
-    
-  //   return setMessageLogin('null')
-  // }, [infoUserLogin])
 
   const handleClickButtonLogin = () => {
     if (infoUserLogin.email.length < 8 
