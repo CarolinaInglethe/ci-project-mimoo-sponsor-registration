@@ -1,5 +1,5 @@
 .login-container {
-  background-color: rgba(78, 199, 163, 0.959);
+  background-color: #16D8B3;
   display: flex;
   height: 100%;
 }
@@ -30,7 +30,7 @@
 }
 
 .green-button {
-  background-color: rgba(63, 189, 151, 0.959);
+  background-color: #16D8B3;
   border: 1px rgba(50, 116, 96, 0.76);
   border-radius: 5px;
   color: aliceblue;

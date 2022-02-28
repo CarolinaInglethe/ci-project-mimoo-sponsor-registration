@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Input from '../components/input';
 import GreenButton from '../components/GreenButton';
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 interface stateInfoUser { email: string; password: string}
 
@@ -13,6 +13,7 @@ const Login = () => {
   const [ infoUserLogin, setInfoUserLogin ] = useState<stateInfoUser>({ email:'', password:'' })
   const [ nameButtonLogin, setNameButtonLogin ] = useState('Entrar')
   const [ messageLogin, setMessageLogin ] = useState('null');
+  const navigate = useNavigate()
 
   const handleChangeInputLogin = ({ target }: evInputs) => {
     const { value,name } = target;
@@ -32,8 +33,9 @@ const Login = () => {
     if (emailRegex.test(infoUserLogin.email) !== true) {
       return setMessageLogin('Formato de email inválido');
     }
-    setMessageLogin('null')
+    setMessageLogin('null');
     setNameButtonLogin('Carregando..');
+    navigate('/sponsors');
   }
 
   return (
@@ -44,7 +46,7 @@ const Login = () => {
       </div>
 
       <form className="login-form-container">
-        <h2 style={ { color:'rgba(70, 196, 158, 0.959)' } }>Mimoo</h2>
+        <h2 style={ { color:'#16D8B3' } }>Mimoo</h2>
         <Input
           inputplaceholder="Email"
           name="email"
