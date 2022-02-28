@@ -8,7 +8,7 @@ const Sponsors = () => {
     <div className="sponsors-container">
       <NavBar/>
 
-      <div>
+      <div className="sponsors-container-2">
       <h2> 
         <img src={logoSorriso} alt="logo Sorriso" width="40px"/> 
         Patrocinadores

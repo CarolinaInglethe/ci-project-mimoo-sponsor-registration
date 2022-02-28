@@ -69,7 +69,31 @@ a:hover {
   display: flex;
 }
 
+.sponsors-container-2 {
+  margin: 10px;
+  padding: 10px;
+}
+
 .dashboard-container {
   background-color: rgb(243, 243, 243);
   display: flex;
+}
+
+.table-container {
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.table-container tr td {
+  margin: 10px;
+  padding: 20px;
+}
+
+
+
+h2, h3 {
+  color: rgba(0, 0, 0, 0.596);
 }

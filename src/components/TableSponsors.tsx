@@ -6,20 +6,18 @@ const TableSponsors = () => {
     'Marcas Ativas', 'Última ação', 'Status',
   ]
   return (
-    <div>
+    <div className="table-container">
       <h3>
         Patrocinadores
       </h3>
 
-      <table style={ { border:"1px" } }>
+      <table >
             <tr>
               {
                 columns.map((colum, index) => (
                   <td key={index}>{colum}</td>
                 ))
               }
-              <td>bb</td>
-              <td>bb</td>
             </tr>
             <tr> 
               <td>hello</td>
