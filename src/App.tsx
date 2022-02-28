@@ -5,6 +5,7 @@ import Dashboard from './pages/dashboard';
 import Login from './pages/Login';
 import Sponsors from './pages/ Sponsors';
 import ForgotPassword from './pages/ForgotPassword';
+import CreateSponsor from './pages/CreateSponsor';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/dashboard" element={ <Dashboard /> } />
           <Route path="/sponsors" element={ <Sponsors /> } />
           <Route path="/forgotPassword" element={ <ForgotPassword /> } />
+          <Route path="/createSponsor" element={ <CreateSponsor /> } />
         </Routes>
       </BrowserRouter>
     </div>
