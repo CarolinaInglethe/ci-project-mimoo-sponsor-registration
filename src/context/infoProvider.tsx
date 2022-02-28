@@ -7,9 +7,9 @@ interface Props {
     handleClick:(e: Event) => void
   }
 
-interface contextTS {
-  value: object;
-}
+// interface contextTS {
+//   value: object;
+// }
   
 
 const InfoProvider: React.FC<Props> = ({ children }) => {
@@ -19,11 +19,10 @@ const InfoProvider: React.FC<Props> = ({ children }) => {
   };
 
   return (
-  // diponibiliza os estados e funcoes para o context
-  //  ira englobar toda aplicaçao e fornecer esses estados e funcoes
-    <InfoContext.Provider value={ contextValues }>
-      { children }
-    </InfoContext.Provider> 
+    // <InfoContext.Provider value={ contextValues }>
+    //   { children }
+    // </InfoContext.Provider> 
+    <p>h</p>
   );
 }
 
