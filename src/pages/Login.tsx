@@ -46,7 +46,7 @@ const Login = () => {
       </div>
 
       <form className="login-form-container">
-        <h2 style={ { color:'#16D8B3' } }>Mimoo</h2>
+        <h2 style={ { color:'#16D8B3' } }>Mimoo :)</h2>
         <Input
           inputplaceholder="Email"
           name="email"
