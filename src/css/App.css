@@ -51,3 +51,7 @@
   border: 1px black solid;
   display: flex;
 }
+
+.dashboard-container {
+  display: flex;
+}
