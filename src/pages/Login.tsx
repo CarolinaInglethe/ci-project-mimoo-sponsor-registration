@@ -60,7 +60,7 @@ const Login = () => {
           handleChange={ handleChangeInputLogin }
         />
 
-        <Link style={ { color: 'rgba(70, 196, 158, 0.959)'  } } to="/dashboard">Esqueceu a senha?</Link>
+        <Link style={ { color: 'rgba(70, 196, 158, 0.959)'  } } to="/forgotPassword">Esqueceu a senha?</Link>
         <span style={ { color: 'red'} }>
           { messageLogin === 'null' ? "" : <p>{ messageLogin }</p>}
         </span>

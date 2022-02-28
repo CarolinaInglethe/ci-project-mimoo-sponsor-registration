@@ -4,6 +4,7 @@ import './css/App.css';
 import Dashboard from './pages/dashboard';
 import Login from './pages/Login';
 import Sponsors from './pages/ Sponsors';
+import ForgotPassword from './pages/ForgotPassword';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/dashboard" element={ <Dashboard /> } />
           <Route path="/sponsors" element={ <Sponsors /> } />
+          <Route path="/forgotPassword" element={ <ForgotPassword /> } />
         </Routes>
       </BrowserRouter>
     </div>
