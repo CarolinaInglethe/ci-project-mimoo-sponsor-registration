@@ -38,3 +38,16 @@
   margin: 30px;
   padding: 12px;
 }
+
+.nav-bar-container {
+  border: 1px rebeccapurple solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5%;
+}
+
+.sponsors-container {
+  border: 1px black solid;
+  display: flex;
+}
