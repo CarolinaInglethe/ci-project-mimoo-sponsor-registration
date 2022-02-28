@@ -40,18 +40,32 @@
 }
 
 .nav-bar-container {
-  border: 1px rebeccapurple solid;
+  background-color: white;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 5%;
+  padding: 4%;
+}
+
+a {
+  color: black;
+  font-size: large;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.nav-sair {
+  margin-top: 200%;
 }
 
 .sponsors-container {
-  border: 1px black solid;
+  background-color: rgb(243, 243, 243);
+  color: black;
   display: flex;
 }
 
 .dashboard-container {
+  background-color: rgb(243, 243, 243);
   display: flex;
 }
