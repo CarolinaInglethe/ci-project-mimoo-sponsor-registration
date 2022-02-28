@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import logoSorriso from '../images/logo-sorriso.png'
+import TableSponsors from '../components/TableSponsors';
 
 const Sponsors = () => {
   return (
@@ -13,7 +14,8 @@ const Sponsors = () => {
         Patrocinadores
       </h2>
       <p>Patrocinadores</p>
-      <h3>Tabela</h3>
+      
+      <TableSponsors/>
       </div>
 
     </div>
