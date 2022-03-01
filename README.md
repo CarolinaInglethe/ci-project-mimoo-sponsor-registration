@@ -1,4 +1,4 @@
-# Projeto React que consome SwaggerHub
+# Projeto React que consome API SwaggerHub
 
 API - https://app.swaggerhub.com/apis/mimoo-tech/frontend-portal-challenge-api/1.0.0
 
