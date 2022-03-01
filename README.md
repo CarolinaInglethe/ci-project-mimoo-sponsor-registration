@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# Projeto React que consome API SwaggerHub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+API - https://app.swaggerhub.com/apis/mimoo-tech/frontend-portal-challenge-api/1.0.0
 
-## Available Scripts
+### O que o Projeto faz ?
 
-In the project directory, you can run:
+A aplicação é um Portal do Patrocinador, onde o usuario admin logado terá acesso a uma tabela de patrocinadores , e poderá também inserir mais patrocinadores. 
 
-### `npm start`
+### Como rodar o codigo na maquina?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Assim que o projeto estiver em sua maquina você deve :
+-  instalar dependencias : npm install
+( aviso:  instalaçoes e versoes trabalhadas em uma máquina linux ubunto/mint)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-  rodar o projeto / abrir no browser: npm start
 
-### `npm test`
+### Como é o site ?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ele irá conter uma pagina inicial Login onde é necessario apenas inserir um email e senha qualquer , seguindo apenas um padrão. E ambos com no minimo 8 caracteres.
+Assim que fizer login com sucesso  ,irá acessar a pagina com tabela de patrocinadores, poderá navegar para dashboard , navegar para criar novo patrocinador , e sair 
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### O projeto ainda esta em construção....
+link github pages : https://carolinainglethe.github.io/ci-project-mimoo-sponsor-registration/
