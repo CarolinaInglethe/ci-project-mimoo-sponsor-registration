@@ -1,9 +1,10 @@
 import { createContext } from 'react';
 
-const defaultState = {
-    dark: false,
-  };
+const initalState = {
+  isOpenModal: false,
+  setIsOpenModal: () => {} ,
+};
 
-const InfoContext = createContext(defaultState)
+const InfoContext = createContext(initalState)
 
 export default InfoContext;
