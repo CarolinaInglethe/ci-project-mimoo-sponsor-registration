@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import logoSorriso from '../images/logo-sorriso.png'
 import TableSponsors from '../components/TableSponsors';
 import { Link } from 'react-router-dom';
+import { InfoContext } from '../context/infoContext-Provider';
 
 const Sponsors = () => {
+  const { requestSponsors } = useContext(InfoContext);
+
+  useEffect(() => {
+    const callRequest = async () => await requestSponsors()
+    callRequest()
+  }, [])
+
   return (
     <div className="sponsors-container">
       <NavBar/>
