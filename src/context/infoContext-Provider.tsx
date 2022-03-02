@@ -5,12 +5,18 @@ type  ContextProps = {
 }
 
 type contextType = {
-  infoUserLogin: boolean;
-  setInfoUserLogin: (nextState: boolean) => void;
+  infoUserLogin: {
+    email: string;
+    password: string;
+  };
+  setInfoUserLogin: (nextState: {email: string, password: string}) => void;
 }
 
 const initalState = {
-  infoUserLogin: false,
+  infoUserLogin: {
+    email: '',
+    password: '',
+  },
   setInfoUserLogin: () => {} ,
 };
 
