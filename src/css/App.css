@@ -7,19 +7,19 @@
 .login-text-container {
   color:rgba(255, 255, 255, 0.959);
   font-size: large;
-  margin-left: 10%;
-  margin-top: 15%;
   text-align: center;
-  width: 20%;
+  margin: 50px;
+  margin-top: 15%;
+  width: 30%;
 }
 
 .login-form-container {
   background-color: rgba(255, 255, 255, 0.911);
   display: flex;
-  height: 100%;
+  height: auto;
   flex-direction: column;
-  margin-left: 20%;
-  padding: 15%;
+  padding: 250px;
+  padding-left: 25%;
   width: 100%;
 }
 
@@ -40,7 +40,11 @@
   font-size: large;
   margin: 30px;
   padding: 12px;
-  width: 50%;
+  width: 45%;
+}
+
+.green-button:hover {
+  background-color: #16d8b49a;
 }
 
 .nav-bar-container {
