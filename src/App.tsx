@@ -6,11 +6,13 @@ import Login from './pages/Login';
 import Sponsors from './pages/ Sponsors';
 import ForgotPassword from './pages/ForgotPassword';
 import CreateSponsor from './pages/CreateSponsor';
+import { InfoProvider } from './context/infoContext-Provider';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <InfoProvider>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Login />} />
@@ -19,6 +21,7 @@ function App() {
           <Route path="/forgotPassword" element={ <ForgotPassword /> } />
           <Route path="/createSponsor" element={ <CreateSponsor /> } />
         </Routes>
+        </InfoProvider>
       </BrowserRouter>
     </div>
   );

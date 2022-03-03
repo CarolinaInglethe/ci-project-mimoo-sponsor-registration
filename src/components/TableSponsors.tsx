@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { InfoContext } from '../context/infoContext-Provider';
 
 const TableSponsors = () => {
+  const { infoSponsors } = useContext(InfoContext)
+
   const columns = [ 
     'Patrocinador', 'Situação', 'Homologada', 'Marcas Cadastradas', 
     'Marcas Ativas', 'Última ação', 'Status',
@@ -12,18 +15,33 @@ const TableSponsors = () => {
       </h3>
 
       <table >
-            <tr>
-              {
-                columns.map((colum, index) => (
-                  <td key={index}>{colum}</td>
-                ))
-              }
-            </tr>
-            <tr> 
-              <td>hello</td>
-              <td>hello</td>
-            </tr>
-        </table>
+        <thead>
+          <tr>
+            {
+              columns.map((colum, index) => (
+                <th key={index}>{colum}</th>
+              ))
+            }
+          </tr>
+        </thead>
+        <tbody>
+          {
+            infoSponsors ?
+             infoSponsors.map((sponsor, index) => (
+              <tr key={index}>
+                <td>{sponsor.name}</td>
+                <td>{sponsor.situation}</td>
+                <td>{sponsor.certified}</td>
+                <td>{sponsor.totalBrands}</td>
+                <td>{sponsor.totalActivedBrands}</td>
+                <td>{sponsor.lastCampaign}</td>
+                <td>{sponsor.status}</td>
+              </tr>
+             ))
+            : <h4>Carregando...</h4>
+          }
+        </tbody>
+      </table>
     </div>
   )
 }

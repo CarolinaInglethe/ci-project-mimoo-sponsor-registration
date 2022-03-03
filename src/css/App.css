@@ -7,19 +7,19 @@
 .login-text-container {
   color:rgba(255, 255, 255, 0.959);
   font-size: large;
-  margin-left: 10%;
-  margin-top: 15%;
   text-align: center;
-  width: 20%;
+  margin: 50px;
+  margin-top: 15%;
+  width: 30%;
 }
 
 .login-form-container {
   background-color: rgba(255, 255, 255, 0.911);
   display: flex;
-  height: 100%;
+  height: auto;
   flex-direction: column;
-  margin-left: 20%;
-  padding: 15%;
+  padding: 250px;
+  padding-left: 25%;
   width: 100%;
 }
 
@@ -40,7 +40,11 @@
   font-size: large;
   margin: 30px;
   padding: 12px;
-  width: 50%;
+  width: 45%;
+}
+
+.green-button:hover {
+  background-color: #16d8b49a;
 }
 
 .nav-bar-container {
@@ -64,18 +68,25 @@ a:hover {
 }
 
 .nav-sair {
-  margin-top: 200%;
+  color: #5b69eb;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120%;
+  text-align: center;
 }
 
 .sponsors-container {
   background-color: rgb(243, 243, 243);
   color: black;
   display: flex;
+  height: 100%;
 }
 
 .sponsors-container-2 {
   margin: 10px;
   padding: 10px;
+  width: 100%;
+  height: auto;
 }
 
 .dashboard-container {
@@ -86,9 +97,9 @@ a:hover {
 .table-container {
   background-color: white;
   border-radius: 10px;
-  margin: 20px;
-  padding: 20px;
-  width: 100%;
+  margin: 50px;
+  padding: 50px;
+  text-align: center;
 }
 
 .table-container tr td {
@@ -98,4 +109,57 @@ a:hover {
 
 h2, h3 {
   color: rgba(0, 0, 0, 0.596);
+}
+
+.link-purple a {
+  position: fixed;
+  background-color: #6876F7;
+  border-radius: 5px;
+  color: white;
+  padding: 6px;
+  margin-left: 60%;
+}
+
+.link-purple a:hover {
+  background-color: #6876f7ab;
+}
+
+.create-sponsor-container {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+}
+
+.create-sponsor-container-2 {
+  margin: 30px;
+  width: 100%;
+}
+
+form {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 17% 20%;
+  padding: 20px;
+}
+
+form input {
+  margin: 20px;
+  padding: 10px;
+}
+
+.form-create-sponsor-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-create-sponsor-buttons a {
+  background-color: #6876F7;
+  border-radius: 3px;
+  color: white;
+  padding: 5px;
+}
+
+.form-create-sponsor-buttons a:hover {
+  background-color: #6876f798;
 }
