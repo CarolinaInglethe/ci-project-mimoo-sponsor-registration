@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Input from '../components/input';
 import GreenButton from '../components/GreenButton';
 import { Link, useNavigate } from 'react-router-dom'
@@ -16,6 +16,10 @@ const Login = () => {
   const [ nameButtonLogin, setNameButtonLogin ] = useState('Entrar')
   const [ messageLogin, setMessageLogin ] = useState('null');
   const navigate = useNavigate()
+
+  useEffect(() => {
+    setInfoUserLogin({ email: '', password: '' })
+  }, [])
 
   const handleChangeInputLogin = ({ target }: evInputs) => {
     const { value,name } = target;
