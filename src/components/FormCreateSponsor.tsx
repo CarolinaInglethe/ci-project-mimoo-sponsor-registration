@@ -24,21 +24,26 @@ const FormCreateSponsor = () => {
         </div>
         <div>
           <h3>Selecione o tipo de conta</h3>
-          <select name="tipoDeConta" id="tipoDeConta">
-            <option value="industria">Indústria</option>
-            <option value="varejo">Varejo</option>
-            <option value="shopping">Shopping</option>
-            <option value="agencia">Agência</option>
-          </select>
+            <input type="radio" id="industria" name="tipoconta" value="Indústria"/>
+            <label htmlFor="industria">Indústria</label>
+
+            <input type="radio" id="varejo" name="tipoconta" value="Varejo"/>
+            <label htmlFor="varejo">Varejo</label>
+
+            <input type="radio" id="shopping" name="tipoconta" value="Shopping"/>
+            <label htmlFor="shopping">Shopping</label>
+
+            <input type="radio" id="agencia" name="tipoconta" value="Agência"/>
+            <label htmlFor="agencia">Agência</label>
         </div>
         <div>
-          <h3>Selecione o tipo de Plano</h3>
-          <select name="tipoDePlano" id="tipoDePlano">
-            <option value="prepago">Pré-pago</option>
-            <option value="pospago">Pós-pago</option>
-          </select>
+            <h3>Selecione o tipo de Plano</h3>
+            <input type="radio" id="planoprepago" name="tipoplano" value="Pré-pago"/>
+            <label htmlFor="planoprepago">Pré-pago</label>
+
+            <input type="radio" id="planopospago" name="tipoplano" value="Pós-pago"/>
+            <label htmlFor="planopospago">Pós-pago</label>
         </div>
-        
       </form>
 
       <ButtonsNextBackForm />
