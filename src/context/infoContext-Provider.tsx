@@ -12,7 +12,15 @@ type contextType = {
   };
   setInfoUserLogin: (nextState: {email: string, password: string}) => void;
   requestSponsors: () => void;
-  infoSponsors: object;
+  infoSponsors: {
+      name:string;
+      situation: string;
+      certified: boolean;
+      totalBrands: number;
+      totalActivedBrands: number;
+      lastCampaign: string;
+      status: string;
+    }[]
 }
 
 const initialState = {
@@ -22,7 +30,17 @@ const initialState = {
   },
   setInfoUserLogin: () => {} ,
   requestSponsors: () => {},
-  infoSponsors: [],
+  infoSponsors: [
+    {
+      name: '',
+      situation:  '',
+      certified: true,
+      totalBrands: 0,
+      totalActivedBrands: 0,
+      lastCampaign:  '',
+      status:  '',
+    },
+  ]
 };
 
 
