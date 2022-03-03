@@ -5,20 +5,20 @@ import { Link } from 'react-router-dom';
 const FormCreateSponsor = () => {
  
   return (
-    <div className="form-create-sponsor-container">
-      <form>
+    <form className="form-create-sponsor">
+      <div>
         <input type="text" placeholder="Empresa" />
         <input type="text" placeholder="CNPJ" />
         <input type="text" placeholder="Saldo de pontos" />
-      </form>
+      </div>
 
       <div className="form-create-sponsor-buttons">
-        <Link to="/sponsors" >Cancelar</Link>
+        <Link to="/sponsors" >Voltar</Link>
         <Link to="/createSponsor" >
           Pŕoximo
         </Link>
       </div>
-    </div>
+    </form>
   )
 }
 
