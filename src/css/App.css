@@ -131,4 +131,35 @@ h2, h3 {
 
 .create-sponsor-container-2 {
   margin: 30px;
+  width: 100%;
+}
+
+form {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 17% 20%;
+  padding: 20px;
+}
+
+form input {
+  margin: 20px;
+  padding: 10px;
+}
+
+.form-create-sponsor-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-create-sponsor-buttons a {
+  background-color: #6876F7;
+  border-radius: 3px;
+  color: white;
+  padding: 5px;
+}
+
+.form-create-sponsor-buttons a:hover {
+  background-color: #6876f798;
 }

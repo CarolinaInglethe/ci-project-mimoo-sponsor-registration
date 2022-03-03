@@ -10,8 +10,8 @@ const CreateSponsor = () => {
 
       <div className="create-sponsor-container-2">
       <h2>
-      <img src={logoSorriso} alt="logo sorriso" width="25px"/>
-      Cadastro Patrocinador
+        <img src={logoSorriso} alt="logo sorriso" width="40px"/>
+        Cadastro Patrocinador
       </h2>
       <p>Patrocinadores {'>'} Cadastro Patrocinador</p>
 
