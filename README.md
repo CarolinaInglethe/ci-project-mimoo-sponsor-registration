@@ -1,4 +1,4 @@
-# Projeto React que consome API SwaggerHub
+# Projeto React Sponsors-Registration
 
 ## O que o Projeto faz ?
 
