@@ -1,26 +1,23 @@
 .login-container {
-  background-color: #16D8B3;
+  background-color: rgb(251, 251, 251);
   display: flex;
-  height: 100%;
 }
   
 .login-text-container {
+  background-color: #16D8B3;
   color:rgba(255, 255, 255, 0.959);
   font-size: large;
+  padding: 5px 7%;
+  padding-top: 15%;
   text-align: center;
-  margin: 50px;
-  margin-top: 15%;
-  width: 30%;
+  width: 15%;
 }
 
 .login-form-container {
   background-color: rgba(255, 255, 255, 0.911);
   display: flex;
-  height: auto;
   flex-direction: column;
-  padding: 250px;
-  padding-left: 25%;
-  width: 100%;
+  width: 45%;
 }
 
 .inputs {
