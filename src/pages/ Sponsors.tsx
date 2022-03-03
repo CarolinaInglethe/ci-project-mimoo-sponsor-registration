@@ -26,11 +26,12 @@ const Sponsors = () => {
       
       <TableSponsors/>
 
-      <Link to="/createSponsor" >
-         + Adicionar Patrocinador
-      </Link>
+      <span className="link-purple">
+        <Link to="/createSponsor" >
+          + Adicionar Patrocinador
+        </Link>
+      </span>
       </div>
-  
     </div>
   )
 }

@@ -68,6 +68,7 @@ a:hover {
 }
 
 .nav-sair {
+  color: #5b69eb;
   display: flex;
   flex-direction: column;
   margin-top: 120%;
@@ -78,11 +79,14 @@ a:hover {
   background-color: rgb(243, 243, 243);
   color: black;
   display: flex;
+  height: 100%;
 }
 
 .sponsors-container-2 {
   margin: 10px;
   padding: 10px;
+  width: 100%;
+  height: auto;
 }
 
 .dashboard-container {
@@ -93,9 +97,9 @@ a:hover {
 .table-container {
   background-color: white;
   border-radius: 10px;
-  margin: 20px;
-  padding: 20px;
-  width: 100%;
+  margin: 50px;
+  padding: 50px;
+  text-align: center;
 }
 
 .table-container tr td {
@@ -105,4 +109,17 @@ a:hover {
 
 h2, h3 {
   color: rgba(0, 0, 0, 0.596);
+}
+
+.link-purple a {
+  position: fixed;
+  background-color: #6876F7;
+  border-radius: 5px;
+  color: white;
+  padding: 6px;
+  margin-left: 60%;
+}
+
+.link-purple a:hover {
+  background-color: #6876f7ab;
 }
