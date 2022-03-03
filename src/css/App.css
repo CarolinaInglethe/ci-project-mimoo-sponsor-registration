@@ -123,3 +123,12 @@ h2, h3 {
 .link-purple a:hover {
   background-color: #6876f7ab;
 }
+
+.create-sponsor-container {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+}
+
+.create-sponsor-container-2 {
+  margin: 30px;
+}
