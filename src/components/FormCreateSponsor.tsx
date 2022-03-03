@@ -1,11 +1,14 @@
 import React from 'react';
 import ButtonsNextBackForm from './ButtonsNextBackForm';
+import NumberPagesForm from './NumberPagesForm';
 
 
 const FormCreateSponsor = () => {
  
   return (
     <div className="form-create-sponsor">
+      <NumberPagesForm />
+      
       <form>
         <div>
         <h3>Informações gerais</h3>
