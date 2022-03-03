@@ -1,7 +1,5 @@
 # Projeto React que consome API SwaggerHub
 
-API - https://app.swaggerhub.com/apis/mimoo-tech/frontend-portal-challenge-api/1.0.0
-
 ### O que o Projeto faz ?
 
 A aplicação é um Portal do Patrocinador, onde o usuario admin logado terá acesso a uma tabela de patrocinadores , e poderá também inserir mais patrocinadores. 
@@ -20,3 +18,5 @@ Ele irá conter uma pagina inicial Login onde é necessario apenas inserir um em
 Assim que fizer login com sucesso  ,irá acessar a pagina com tabela de patrocinadores, poderá navegar para dashboard , navegar para criar novo patrocinador , e sair 
 
 #### O projeto ainda esta em construção....
+
+API - https://app.swaggerhub.com/apis/mimoo-tech/frontend-portal-challenge-api/1.0.0
