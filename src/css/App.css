@@ -141,14 +141,14 @@ h2, h3 {
 }
 
 .form-create-sponsor input {
-  margin: 20px;
+  margin: 15px;
   padding: 10px;
 }
 
 .form-create-sponsor-buttons {
   display: flex;
   justify-content: space-around;
-  padding-top: 50px;
+  padding-top: 100px;
   width: 100%;
 }
 
