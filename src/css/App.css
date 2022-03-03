@@ -80,7 +80,7 @@ a:hover {
 }
 
 .sponsors-container-2 {
-  margin: 10px;
+  margin: 0px 10px;
   padding: 10px;
   width: 100%;
   height: auto;
@@ -127,7 +127,7 @@ h2, h3 {
 }
 
 .create-sponsor-container-2 {
-  margin: 30px;
+  margin: 1px 10px;
   width: 100%;
 }
 
@@ -136,14 +136,19 @@ h2, h3 {
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
-  margin: 4% 20%;
+  margin: 2% 20%;
   padding: 20px;
 }
 
 .number-pages {
+  color: #515aadaf;
   display: flex;
   justify-content: space-around;
   width: 85%;
+}
+
+.number-pages h4{
+  display: flex;
 }
 
 .form-create-sponsor input {
@@ -154,7 +159,7 @@ h2, h3 {
 .form-create-sponsor-buttons {
   display: flex;
   justify-content: space-around;
-  padding-top: 100px;
+  padding-top: 50px;
   width: 100%;
 }
 
