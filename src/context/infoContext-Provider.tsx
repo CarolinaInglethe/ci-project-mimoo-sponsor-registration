@@ -23,7 +23,19 @@ type contextType = {
     }[];
   numberPagesForm: number;
   setNumberPagesForm: (nextState: number) => void;
-  infoSponsorRegister: object;
+  infoSponsorRegister: {
+    name: string,
+    image: string,
+    cnpj: string,
+    situation: string,
+    certified: boolean,
+    points: number,
+    contactName: string,
+    contactEmail: string,
+    contactPhone: string,
+    accountType: string,
+    accountPlan: string,
+  };
   setInfoSponsorRegister: (nextState: {
     name: string,
     image: string,
