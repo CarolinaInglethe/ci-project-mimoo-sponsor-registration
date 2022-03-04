@@ -6,11 +6,12 @@ import { Link } from 'react-router-dom';
 import { InfoContext } from '../context/infoContext-Provider';
 
 const Sponsors = () => {
-  const { requestSponsors } = useContext(InfoContext);
+  const { requestSponsors, setNumberPagesForm } = useContext(InfoContext);
 
   useEffect(() => {
     const callRequest = async () => await requestSponsors()
     callRequest()
+    setNumberPagesForm(1)
   }, [])
 
   return (

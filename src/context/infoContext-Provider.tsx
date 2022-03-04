@@ -69,7 +69,7 @@ const initialState = {
       status:  '',
     },
   ],
-  numberPagesForm: 2,
+  numberPagesForm: 1,
   setNumberPagesForm: () => {},
   infoSponsorRegister: {
     name: '',
