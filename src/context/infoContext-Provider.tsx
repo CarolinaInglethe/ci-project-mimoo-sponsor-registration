@@ -43,7 +43,7 @@ const initialState = {
       status:  '',
     },
   ],
-  numberPagesForm: 1,
+  numberPagesForm: 2,
   setNumberPagesForm: () => {},
 };
 
