@@ -14,10 +14,9 @@ const FormCreateSponsor3 = () => {
         <h3>Marcas</h3>
         <button>Vincular marcas</button>
         </div>
-        
-        <input type="text" placeholder="Empresa" />
-        <input type="text" placeholder="CNPJ" />
-        <input type="text" placeholder="Saldo de pontos" />
+        <div>
+            Nenhuma marca selecionada
+        </div>
       </form>
 
       <ButtonsNextBackForm />
