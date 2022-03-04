@@ -2,7 +2,6 @@ import React from 'react';
 import ButtonsNextBackForm from './ButtonsNextBackForm';
 import NumberPagesForm from './NumberPagesForm';
 
-
 const FormCreateSponsor1 = () => {
  
   return (
@@ -12,7 +11,7 @@ const FormCreateSponsor1 = () => {
       <form>
         <div>
         <h3>Informações gerais</h3>
-        <input type="image" alt="Clique para adicionar uma imagem" />
+        {/* <input type="image" alt="Clique para adicionar uma imagem" /> */}
         <input type="text" placeholder="Empresa" />
         <input type="text" placeholder="CNPJ" />
         <input type="text" placeholder="Saldo de pontos" />
