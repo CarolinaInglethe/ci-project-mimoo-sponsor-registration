@@ -7,7 +7,7 @@ const FormCreateSponsor1 = () => {
  
   return (
     <div className="form-create-sponsor-1">
-      <NumberPagesForm />
+      <NumberPagesForm numberPageActive="1"/>
       
       <form>
         <div>

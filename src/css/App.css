@@ -140,10 +140,14 @@ h2, h3 {
 }
 
 .number-pages {
-  color: #515aadc0;
+  color: #515aad7c;
   display: flex;
   justify-content: space-around;
   width: 85%;
+}
+
+.number-pages-active {
+  color: #6876F7;
 }
 
 .number-pages h4{
