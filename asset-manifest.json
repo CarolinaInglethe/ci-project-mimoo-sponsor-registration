@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ci-project-mimoo-sponsor-registration/static/css/main.bd470601.css",
-    "main.js": "/ci-project-mimoo-sponsor-registration/static/js/main.d57debbe.js",
+    "main.css": "/ci-project-mimoo-sponsor-registration/static/css/main.4feb2252.css",
+    "main.js": "/ci-project-mimoo-sponsor-registration/static/js/main.326f82a7.js",
     "static/media/logo-sorriso.png": "/ci-project-mimoo-sponsor-registration/static/media/logo-sorriso.d0225fd7ff4f41a2a425.png",
     "static/media/logo-grafico.png": "/ci-project-mimoo-sponsor-registration/static/media/logo-grafico.68556a0e08717b972b72.png",
     "index.html": "/ci-project-mimoo-sponsor-registration/index.html",
-    "main.bd470601.css.map": "/ci-project-mimoo-sponsor-registration/static/css/main.bd470601.css.map",
-    "main.d57debbe.js.map": "/ci-project-mimoo-sponsor-registration/static/js/main.d57debbe.js.map"
+    "main.4feb2252.css.map": "/ci-project-mimoo-sponsor-registration/static/css/main.4feb2252.css.map",
+    "main.326f82a7.js.map": "/ci-project-mimoo-sponsor-registration/static/js/main.326f82a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd470601.css",
-    "static/js/main.d57debbe.js"
+    "static/css/main.4feb2252.css",
+    "static/js/main.326f82a7.js"
   ]
 }
