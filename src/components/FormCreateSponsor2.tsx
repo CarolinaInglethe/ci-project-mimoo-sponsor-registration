@@ -8,7 +8,6 @@ const FormCreateSponsor2 = () => {
   return (
     <div className="form-create-sponsor-1">
       <NumberPagesForm numberPageActive="2"/>
-      <p>Form 2</p>
       <form>
         <h3>Responsável pela conta</h3>
         <input type="text" placeholder="Nome" />

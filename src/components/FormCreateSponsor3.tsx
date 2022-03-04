@@ -8,7 +8,6 @@ const FormCreateSponsor3 = () => {
   return (
     <div className="form-create-sponsor-1">
       <NumberPagesForm numberPageActive="3"/>
-      <p>Form 3</p>
       <form>
         <div>
         <h3>Marcas</h3>
