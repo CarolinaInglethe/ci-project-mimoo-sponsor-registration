@@ -162,13 +162,14 @@ h2, h3 {
   width: 100%;
 }
 
-.form-create-sponsor-buttons a {
+.form-create-sponsor-buttons button {
   background-color: #6876F7;
+  border: 0px;
   border-radius: 3px;
   color: white;
-  padding: 5px;
+  padding: 10px;
 }
 
-.form-create-sponsor-buttons a:hover {
+.form-create-sponsor-buttons button:hover {
   background-color: #6876f798;
 };
