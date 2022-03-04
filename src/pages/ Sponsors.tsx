@@ -6,11 +6,25 @@ import { Link } from 'react-router-dom';
 import { InfoContext } from '../context/infoContext-Provider';
 
 const Sponsors = () => {
-  const { requestSponsors } = useContext(InfoContext);
+  const { requestSponsors, setNumberPagesForm, setInfoSponsorRegister } = useContext(InfoContext);
 
   useEffect(() => {
     const callRequest = async () => await requestSponsors()
     callRequest()
+    setNumberPagesForm(1)
+    setInfoSponsorRegister({
+      name: '',
+      image: '',
+      cnpj: '',
+      situation: '',
+      certified: true,
+      points: 0,
+      contactName: '',
+      contactEmail: '',
+      contactPhone: '',
+      accountType: '',
+      accountPlan: '',
+    })
   }, [])
 
   return (

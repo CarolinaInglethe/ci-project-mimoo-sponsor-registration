@@ -18,8 +18,8 @@ Assim que o projeto estiver em sua maquina você deve :
 
 ## Como é o site ?
 
-Ele irá conter uma pagina inicial Login onde é necessario apenas inserir um email e senha qualquer , seguindo apenas um padrão. E ambos com no minimo 8 caracteres.
-Assim que fizer login com sucesso  ,irá acessar a pagina com tabela de patrocinadores, poderá navegar para dashboard , navegar para criar novo patrocinador , e sair 
+Ele irá conter uma pagina inicial Login ,onde é necessario inserir um email e senha qualquer seguindo apenas um padrão, ambos com no minimo 8 caracteres.
+Assim que fizer login com sucesso irá acessar a pagina com tabela de patrocinadores, poderá navegar para dashboard , navegar para criar novo patrocinador , e sair 
 
 - Disponivel no Github pages , link na descriçao do repositório (About )
 

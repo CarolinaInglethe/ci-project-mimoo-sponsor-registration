@@ -7,17 +7,17 @@
   background-color: #16D8B3;
   color:rgba(255, 255, 255, 0.959);
   font-size: large;
-  padding: 5px 7%;
-  padding-top: 15%;
+  padding: 325px 50px;
   text-align: center;
-  width: 15%;
+  width: 20%;
 }
 
 .login-form-container {
   background-color: rgba(255, 255, 255, 0.911);
   display: flex;
   flex-direction: column;
-  width: 45%;
+  margin: auto;
+  width: 550px;
 }
 
 .inputs {
@@ -49,8 +49,7 @@
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 4%;
+  padding: 3%;
 }
 
 a {
@@ -80,7 +79,7 @@ a:hover {
 }
 
 .sponsors-container-2 {
-  margin: 10px;
+  margin: 0px 10px;
   padding: 10px;
   width: 100%;
   height: auto;
@@ -127,36 +126,54 @@ h2, h3 {
 }
 
 .create-sponsor-container-2 {
-  margin: 30px;
+  margin: 1px 10px;
   width: 100%;
 }
 
-form {
+.form-create-sponsor-1 {
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
-  margin: 17% 20%;
+  margin: 2% 20%;
   padding: 20px;
 }
 
-form input {
-  margin: 20px;
+.number-pages {
+  color: #515aad7c;
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+}
+
+.number-pages-active {
+  color: #6876F7;
+}
+
+.number-pages h4{
+  display: flex;
+}
+
+.form-create-sponsor-1 input {
+  margin: 15px;
   padding: 10px;
 }
 
 .form-create-sponsor-buttons {
   display: flex;
   justify-content: space-around;
+  padding-top: 50px;
+  width: 100%;
 }
 
-.form-create-sponsor-buttons a {
+.form-create-sponsor-buttons button {
   background-color: #6876F7;
+  border: 0px;
   border-radius: 3px;
   color: white;
-  padding: 5px;
+  padding: 10px;
 }
 
-.form-create-sponsor-buttons a:hover {
+.form-create-sponsor-buttons button:hover {
   background-color: #6876f798;
 };

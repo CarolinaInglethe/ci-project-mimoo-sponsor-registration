@@ -8,6 +8,7 @@ const Dashboard = () => {
 
       <div>
         <h1>Dashboard Page</h1>
+        <h2>Em manutenção...</h2>
       </div>
     </div>
     
