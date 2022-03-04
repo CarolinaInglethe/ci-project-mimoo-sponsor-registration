@@ -1,5 +1,5 @@
 import React from 'react';
-import FormCreateSponsor from '../components/FormCreateSponsor-1';
+import FormCreateSponsor1 from '../components/FormCreateSponsor1';
 import NavBar from '../components/NavBar';
 import logoSorriso from '../images/logo-sorriso.png'
 
@@ -15,7 +15,7 @@ const CreateSponsor = () => {
       </h2>
       <p>Patrocinadores {'>'} Cadastro Patrocinador</p>
 
-      <FormCreateSponsor />
+      <FormCreateSponsor1 />
       </div>
       
     </div>
