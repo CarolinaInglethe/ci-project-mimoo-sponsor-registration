@@ -1,5 +1,5 @@
 import React from 'react';
-import FormCreateSponsor from '../components/FormCreateSponsor';
+import FormCreateSponsor from '../components/FormCreateSponsor-1';
 import NavBar from '../components/NavBar';
 import logoSorriso from '../images/logo-sorriso.png'
 

@@ -130,7 +130,7 @@ h2, h3 {
   width: 100%;
 }
 
-.form-create-sponsor {
+.form-create-sponsor-1 {
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   display: flex;
@@ -150,7 +150,7 @@ h2, h3 {
   display: flex;
 }
 
-.form-create-sponsor input {
+.form-create-sponsor-1 input {
   margin: 15px;
   padding: 10px;
 }

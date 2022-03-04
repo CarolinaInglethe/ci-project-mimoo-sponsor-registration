@@ -3,13 +3,13 @@ import ButtonsNextBackForm from './ButtonsNextBackForm';
 import NumberPagesForm from './NumberPagesForm';
 
 
-const FormCreateSponsor = () => {
+const FormCreateSponsor3 = () => {
  
   return (
-    <div className="form-create-sponsor">
+    <div className="form-create-sponsor-1">
       <NumberPagesForm />
-      
-      <form>
+      <p>Form 3</p>
+      {/* <form>
         <div>
         <h3>Informações gerais</h3>
         <input type="image" alt="Clique para adicionar uma imagem" />
@@ -47,11 +47,11 @@ const FormCreateSponsor = () => {
             <input type="radio" id="planopospago" name="tipoplano" value="Pós-pago"/>
             <label htmlFor="planopospago">Pós-pago</label>
         </div>
-      </form>
+      </form> */}
 
       <ButtonsNextBackForm />
     </div>
   )
 }
 
-export default FormCreateSponsor;
+export default FormCreateSponsor3;
