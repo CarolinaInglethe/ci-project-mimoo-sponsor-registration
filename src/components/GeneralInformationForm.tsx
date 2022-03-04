@@ -16,7 +16,6 @@ const GeneralInformationForm = () => {
       ...infoSponsorRegister,
       [name]: value
     });
-    console.log(infoSponsorRegister)
   }
  
   return (
