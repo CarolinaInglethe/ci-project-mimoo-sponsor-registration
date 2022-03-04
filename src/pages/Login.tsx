@@ -4,14 +4,11 @@ import GreenButton from '../components/GreenButton';
 import { Link, useNavigate } from 'react-router-dom'
 import { InfoContext } from '../context/infoContext-Provider';
 
-// interface stateInfoUser { email: string; password: string}
-
 interface evInputs2 { value: string; name: string; }
 
 interface evInputs { target: evInputs2; }
 
 const Login = () => {
-  // const [ infoUserLogin, setInfoUserLogin ] = useState<stateInfoUser>({ email:'', password:'' })
   const { infoUserLogin, setInfoUserLogin } = useContext(InfoContext)
   const [ nameButtonLogin, setNameButtonLogin ] = useState('Entrar')
   const [ messageLogin, setMessageLogin ] = useState('null');
