@@ -9,13 +9,26 @@ interface evInputs2 { value: string; name: string; }
 interface evInputs { target: evInputs2; }
 
 const Login = () => {
-  const { infoUserLogin, setInfoUserLogin } = useContext(InfoContext)
+  const { infoUserLogin, setInfoUserLogin, setInfoSponsorRegister } = useContext(InfoContext)
   const [ nameButtonLogin, setNameButtonLogin ] = useState('Entrar')
   const [ messageLogin, setMessageLogin ] = useState('null');
   const navigate = useNavigate()
 
   useEffect(() => {
     setInfoUserLogin({ email: '', password: '' })
+    setInfoSponsorRegister({
+      name: '',
+      image: '',
+      cnpj: '',
+      situation: '',
+      certified: true,
+      points: 0,
+      contactName: '',
+      contactEmail: '',
+      contactPhone: '',
+      accountType: '',
+      accountPlan: '',
+    })
   }, [])
 
   const handleChangeInputLogin = ({ target }: evInputs) => {

@@ -19,8 +19,8 @@ const ButtonsNextBackForm = () => {
   const handleClickNextForm = async () => {
     if (numberPagesForm === 3) {
       const registerSponser = await axios.post('https://virtserver.swaggerhub.com/mimoo-tech/frontend-portal-challenge-api/1.0.0/sponsors', infoSponsorRegister)
-      .then((res) => res)
-      .catch((err) => err)
+      .then((res) => "Sucesso")
+      .catch((err) => "Houve um erro")
       return alert( `${registerSponser}` )
     }
     return setNumberPagesForm( numberPagesForm + 1)
