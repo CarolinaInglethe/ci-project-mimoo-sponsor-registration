@@ -20,7 +20,9 @@ type contextType = {
       totalActivedBrands: number;
       lastCampaign: string;
       status: string;
-    }[]
+    }[];
+  numberPagesForm: number;
+  setNumberPagesForm: (nextState: number) => void;
 }
 
 const initialState = {
@@ -40,7 +42,9 @@ const initialState = {
       lastCampaign:  '',
       status:  '',
     },
-  ]
+  ],
+  numberPagesForm: 1,
+  setNumberPagesForm: () => {},
 };
 
 
@@ -49,6 +53,7 @@ export const InfoContext = createContext<contextType>(initialState)
 export const InfoProvider = ({ children }: ContextProps) => {
   const [ infoUserLogin, setInfoUserLogin ] = useState(initialState.infoUserLogin);
   const [ infoSponsors , setInfoSponsors] = useState(initialState.infoSponsors)
+  const [ numberPagesForm, setNumberPagesForm ] = useState(initialState.numberPagesForm)
 
   const requestSponsors = async () => {
     await axios.get('https://virtserver.swaggerhub.com/mimoo-tech/frontend-portal-challenge-api/1.0.0/sponsors')
@@ -63,6 +68,8 @@ export const InfoProvider = ({ children }: ContextProps) => {
         setInfoUserLogin,
         requestSponsors,
         infoSponsors,
+        numberPagesForm,
+        setNumberPagesForm,
       } 
     }>
       { children }
